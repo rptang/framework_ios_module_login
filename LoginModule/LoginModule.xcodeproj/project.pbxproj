@@ -13,6 +13,7 @@
 		600201BA21BD54E2008D1FFD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 600201B921BD54E2008D1FFD /* Assets.xcassets */; };
 		600201BD21BD54E2008D1FFD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 600201BB21BD54E2008D1FFD /* LaunchScreen.storyboard */; };
 		600201CA21BD5621008D1FFD /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 600201C921BD5621008D1FFD /* README.md */; };
+		600FC85521BE142D0044004F /* Target_LoginModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 600FC85421BE142D0044004F /* Target_LoginModule.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		600201BC21BD54E2008D1FFD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		600201BE21BD54E2008D1FFD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		600201C921BD5621008D1FFD /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		600FC85421BE142D0044004F /* Target_LoginModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Target_LoginModule.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 				600201C621BD5547008D1FFD /* app */,
 				600201C521BD5538008D1FFD /* view */,
 				600201C421BD5527008D1FFD /* resource */,
+				600FC85321BE14060044004F /* target */,
 				600201B621BD54E1008D1FFD /* Main.storyboard */,
 				600201BB21BD54E2008D1FFD /* LaunchScreen.storyboard */,
 				600201BE21BD54E2008D1FFD /* Info.plist */,
@@ -89,6 +92,14 @@
 				600201B221BD54E1008D1FFD /* AppDelegate.swift */,
 			);
 			path = app;
+			sourceTree = "<group>";
+		};
+		600FC85321BE14060044004F /* target */ = {
+			isa = PBXGroup;
+			children = (
+				600FC85421BE142D0044004F /* Target_LoginModule.swift */,
+			);
+			path = target;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -163,6 +174,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				600FC85521BE142D0044004F /* Target_LoginModule.swift in Sources */,
 				600201B521BD54E1008D1FFD /* ViewController.swift in Sources */,
 				600201B321BD54E1008D1FFD /* AppDelegate.swift in Sources */,
 			);
