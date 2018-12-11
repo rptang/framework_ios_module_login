@@ -15,7 +15,7 @@ public extension CTMediator {
             "callback":callback,
             kCTMediatorParamsKeySwiftTargetModuleName:"framework_ios_module_login"
             ] as [AnyHashable : Any]
-        if let viewController = self.performTarget("LoginModule", action: "Extension_ViewController", params: params, shouldCacheTarget: false) as? UITabBarController {
+        if let viewController = self.performTarget("LoginModule", action: "Extension_ViewController", params: params, shouldCacheTarget: false) as? UIViewController {
             return viewController
         }
         return nil

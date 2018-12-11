@@ -10,12 +10,12 @@ import UIKit
 
 @objc class Target_LoginModule: NSObject {
     
-    @objc func Action_Extension_ViewController(_ params:NSDictionary) -> UITabBarController {
+    @objc func Action_Extension_ViewController(_ params:NSDictionary) -> UIViewController {
         if let callback = params["callback"] as? (String) -> Void {
             callback("success")
         }
         
-        let aViewController = MainTabBarViewController()
+        let aViewController = ViewController()
         return aViewController
     }
     

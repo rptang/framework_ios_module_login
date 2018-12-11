@@ -1,4 +1,9 @@
 # Xcode
 .DS_Store
 /LoginModule/.DS_Store
-/LoginModule/LoginModule.xcodeproj/project.xcworkspace/xcuserdata/rptang.xcuserdatad/UserInterfaceState.xcuserstate
+/LoginModule/LoginModule.xcodeproj/project.xcworkspace/xcuserdata/
+*.swp
+/LoginModule/Podfile.lock
+/LoginModule/LoginModule.xcodeproj/
+/LoginModule/LoginModule.xcworkspace/
+/LoginModule/Pods/
