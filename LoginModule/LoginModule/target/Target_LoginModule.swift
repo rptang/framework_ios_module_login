@@ -17,7 +17,7 @@ import UIKit
         
         print("Action_Extension_ViewController")
         
-        let aViewController = ViewController()
+        let aViewController = HomeViewController()
         return aViewController
     }
     
