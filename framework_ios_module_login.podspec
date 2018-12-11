@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "framework_ios_module_login"
-  s.version      = "0.0.4"
+  s.version      = "0.0.6"
   s.swift_version= '4.2'
   s.summary      = "账户管理组件."
 
@@ -139,6 +139,6 @@ Pod::Spec.new do |s|
   # s.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
   # s.dependency "JSONKit", "~> 1.4"
 
-  s.dependency "CTMediator"
+  # s.dependency "CTMediator"
 
 end

@@ -7,6 +7,6 @@ target 'LoginModule' do
   
   use_frameworks!
 
-  pod "CTMediator"
+  #pod "CTMediator"
 
 end
