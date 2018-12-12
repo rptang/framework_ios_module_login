@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "framework_ios_module_login"
-  s.version      = "0.0.8"
+  s.version      = "0.0.9"
   s.swift_version= '4.2'
   s.summary      = "账户管理组件."
 
@@ -96,7 +96,7 @@ Pod::Spec.new do |s|
   #  Not including the public_header_files will make all headers public.
   #
 
-  s.source_files  = "LoginModule/LoginModule/**/*.{swift,xib}"
+  s.source_files  = "LoginModule/LoginModule/**/*.swift"
   # s.exclude_files = "Classes/Exclude"
 
   # s.public_header_files = "Classes/**/*.h"
@@ -110,7 +110,9 @@ Pod::Spec.new do |s|
   #  non-essential files like tests, examples and documentation.
   #
 
-  # s.resource  = "icon.png"
+  s.resource_bundles = {
+    'framework_ios_module_login' => ['LoginModule/LoginModule/**/*.xib']
+  }
   # s.resources = "Resources/*.png"
 
   # s.preserve_paths = "FilesToSave", "MoreFilesToSave"
@@ -140,6 +142,6 @@ Pod::Spec.new do |s|
   # s.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
   # s.dependency "JSONKit", "~> 1.4"
 
-  # s.dependency "CTMediator"
+  s.dependency "CTMediator"
 
 end
