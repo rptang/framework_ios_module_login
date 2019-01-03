@@ -8,9 +8,9 @@
 
 import UIKit
 
-class MainTabBarViewController: UITabBarController {
+public class MainTabBarViewController: UITabBarController {
 
-    override func viewDidLoad() {
+    override public func viewDidLoad() {
         super.viewDidLoad()
         
         //创建tabbar的子控制器
