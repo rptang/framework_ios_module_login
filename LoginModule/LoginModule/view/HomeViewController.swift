@@ -8,32 +8,26 @@
 
 import UIKit
 
-class HomeViewController: UIViewController {
+class HomeViewController: BaseViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        print("viewDidLoad")
-        
-        // Do any additional setup after loading the view.
     }
+    
+    /// 关联xib，当pod为组件，被宿主App引用时，资源被放入新bundle中，无法从mainBundle中读取
     override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
-        debugPrint("init111")
         let currentBundle = Bundle(for: type(of: self))
         let path = currentBundle.path(forResource: "framework_ios_module_login", ofType: "bundle")
-        super.init(nibName: "HomeViewController", bundle: Bundle.init(path: path!))
+        if path != nil{
+            super.init(nibName: "HomeViewController", bundle: Bundle.init(path: path!))
+        }else{
+            super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
+        }
+        
     }
     
-    /// 重载父类的init()
-    init(name: String) {
-        debugPrint("init222")
-        let currentBundle = Bundle(for: type(of: self))
-        let path = currentBundle.path(forResource: "framework_ios_module_login", ofType: "bundle")
-        super.init(nibName: "HomeViewController", bundle: Bundle.init(path: path!))
-    }
-    
+    /// 辅助init函数
     required init?(coder aDecoder: NSCoder) {
-        debugPrint("init333")
-        super.init(coder: aDecoder)
+        fatalError("init(coder:) has not been implemented")
     }
 }
