@@ -19,7 +19,9 @@ class HomeViewController: UIViewController {
     }
     override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
         debugPrint("init111")
-        super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
+        let currentBundle = Bundle(for: type(of: self))
+        let path = currentBundle.path(forResource: "framework_ios_module_login", ofType: "bundle")
+        super.init(nibName: "HomeViewController", bundle: Bundle.init(path: path!))
     }
     
     /// 重载父类的init()
