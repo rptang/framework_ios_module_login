@@ -12,19 +12,26 @@ class HomeViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        print("viewDidLoad")
+        
         // Do any additional setup after loading the view.
     }
-
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
+        debugPrint("init111")
+        super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
     }
-    */
-
+    
+    /// 重载父类的init()
+    init(name: String) {
+        debugPrint("init222")
+        let currentBundle = Bundle(for: type(of: self))
+        let path = currentBundle.path(forResource: "framework_ios_module_login", ofType: "bundle")
+        super.init(nibName: "HomeViewController", bundle: Bundle.init(path: path!))
+    }
+    
+    required init?(coder aDecoder: NSCoder) {
+        debugPrint("init333")
+        super.init(coder: aDecoder)
+    }
 }

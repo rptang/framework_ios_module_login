@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "framework_ios_module_login"
-  s.version      = "0.0.9"
+  s.version      = "0.1.0"
   s.swift_version= '4.2'
   s.summary      = "账户管理组件."
 
